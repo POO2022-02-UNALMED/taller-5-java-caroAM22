@@ -71,7 +71,6 @@ public class Animal {
 
 	public void setZona(ArrayList<Zona> zona) {
 		this.zona = zona;
-		zona.get(0).agregarAnimales(this);
 	}
 	
 	public String movimiento() {
