@@ -3,7 +3,7 @@ package zooAnimales;
 import java.util.ArrayList;
 
 public class Reptil extends Animal{
-	private static ArrayList<Reptil> listado;
+	private static ArrayList<Reptil> listado=new ArrayList <>();;
 	public static int iguanas;
 	public static int serpientes;
 	private String colorEscamas;
@@ -24,7 +24,7 @@ public class Reptil extends Animal{
 		return listado;
 	}
 	public void setListado(ArrayList<Reptil> listado) {
-		this.listado = listado;
+		Reptil.listado = listado;
 	}
 	public String getColorEscamas() {
 		return colorEscamas;

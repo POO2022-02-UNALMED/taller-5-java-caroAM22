@@ -15,8 +15,11 @@ public class Zona {
 	
 	public Zona(String nombre,Zoologico z) {
 		this.nombre = nombre;
-		zoo.add(z);
-		z.agregarZonas(this);
+		zoo=new ArrayList <>();
+		if (z!=null) {
+			zoo.add(z);
+		}
+		animales=new ArrayList<>();
 	}
 
 	public String getNombre() {
@@ -31,8 +34,8 @@ public class Zona {
 		return zoo.get(0);
 	}
 
-	public void setZoo(ArrayList<Zoologico> zoo) {
-		this.zoo = zoo;
+	public void setZoo(Zoologico z) {
+		zoo.add(z);
 	}
 
 	public ArrayList<Animal> getAnimales() {
